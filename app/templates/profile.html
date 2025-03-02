@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+    {% block main %}
+
+        <div class = "grouping">
+           
+                
+            <div class = "top">
+
+                        <img src="{{url_for('static', filename = 'shan.JPG')}}" alt="picture of me">
+                    
+                    
+
+                    <div class = "aboutME">
+
+                        <h2> Shantae  Saddler </h2>
+                        <p> @Shan_dizzle</p>
+                        <p> Kingston, Jamaica </p>
+                        <p> {{ date }} </p>
+
+                    </div>
+            </div>   
+
+            <div class = "bottom">
+                    <div class = "bio">
+                        <p> Beware user is just a girl with a mixture of ADHD and anxiety :/  #Christ4life </p>
+                    </div>
+
+                    <div class = "activity">
+
+                        <div class="posts"><p><b>12</b><br>Posts</p></div>
+                        <div class="following"><p><b>54</b><br>Following</p></div>
+                        <div class="followers"><p><b>99</b><br>Followers</p></div>
+
+                    </div>
+
+                    <div id = "followBtn">
+
+                        <button>Follow</button>
+
+                    </div>
+            </div>
+            
+        </div>
+    {% endblock %}
